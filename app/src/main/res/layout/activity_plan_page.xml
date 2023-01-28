@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <Button
+        android:id="@+id/dinnerButton"
+        android:layout_width="137dp"
+        android:layout_height="70dp"
+        android:text="Dinner"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <Button
+        android:id="@+id/lunchButton"
+        android:layout_width="137dp"
+        android:layout_height="70dp"
+        android:text="Lunch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <Button
+        android:id="@+id/breakfastButton"
+        android:layout_width="137dp"
+        android:layout_height="70dp"
+        android:text="Breakfast"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.279"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/gainOrLoss"
+        android:layout_width="137dp"
+        android:layout_height="137dp"
+        app:layout_constraintBottom_toTopOf="@+id/lunchButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.34"
+        app:srcCompat="@drawable/button_shape" />
+
+    <ImageView
+        android:id="@+id/consumeCal"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        app:layout_constraintBottom_toTopOf="@+id/dinnerButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/gainOrLoss"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_shape" />
+
+    <TextView
+        android:id="@+id/gainOrLossText"
+        android:layout_width="93dp"
+        android:layout_height="44dp"
+        android:autoSizeTextType="uniform"
+        android:text="-100 cal"
+        app:layout_constraintBottom_toBottomOf="@+id/gainOrLoss"
+        app:layout_constraintEnd_toEndOf="@+id/gainOrLoss"
+        app:layout_constraintStart_toStartOf="@+id/gainOrLoss"
+        app:layout_constraintTop_toTopOf="@+id/gainOrLoss" />
+
+    <ImageButton
+        android:id="@+id/TDEEButton"
+        android:layout_width="97dp"
+        android:layout_height="97dp"
+        android:layout_marginBottom="50dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toTopOf="@+id/breakfastButton"
+        app:layout_constraintEnd_toStartOf="@+id/gainOrLoss"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/button_shape" />
+
+    <TextView
+        android:id="@+id/consumeText"
+        android:layout_width="71dp"
+        android:layout_height="37dp"
+        android:text="2000 cals"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/consumeCal"
+        app:layout_constraintEnd_toEndOf="@+id/consumeCal"
+        app:layout_constraintStart_toStartOf="@+id/consumeCal"
+        app:layout_constraintTop_toTopOf="@+id/consumeCal" />
+
+    <TextView
+        android:id="@+id/TDEEText"
+        android:layout_width="68dp"
+        android:layout_height="32dp"
+        android:text="2100 cals"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintBottom_toBottomOf="@+id/TDEEButton"
+        app:layout_constraintEnd_toEndOf="@+id/TDEEButton"
+        app:layout_constraintStart_toStartOf="@+id/TDEEButton"
+        app:layout_constraintTop_toTopOf="@+id/TDEEButton" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

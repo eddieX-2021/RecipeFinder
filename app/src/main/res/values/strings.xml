@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Recipe Finder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="recipe_finder">Recipe Finder</string>
+    <string name="full_name">Full Name</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="sign_in">Sign In</string>
+    <string name="register">Register</string>
+    <string name="cal_num">%d&#160;cal</string>
+</resources>
